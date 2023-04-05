@@ -1,0 +1,183 @@
+@font-face{
+  font-family: MyFont;
+  src: url(../font/always_smile/Always\ Smile.otf);
+}
+@font-face{
+  font-family: MyFont1;
+  src: url(../font/sinoreta/Sinoreta_PERSONAL_USE_ONLY.otf);
+}
+body{
+    background-color: black;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+/* .cards{
+    padding-top: 50px;
+    background-color: peachpuff;
+    display: flex;
+    justify-content: space-around;
+} */
+header{
+    background-color: #000000dc;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h6{
+    color: white;
+}
+.containeri {
+    width: 350px;
+    height: 350px;
+    perspective: 800px;
+  }
+  
+  .containeri:hover > .cardi {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .cardi {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .fronti,
+  .backi {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .fronti img{
+    border-radius: 20px;
+    height:350px;
+    width: 350px;
+  }
+  
+  .backi {
+    /* background-color: white; */
+    background-image: url(cards\ image/cardbg.jpeg);
+    /* background-image: url(https://source.unsplash.com/love/350x350); */
+    background-size: cover;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+    /* gap: 2rem; */
+  }
+  .cards{
+    background-color: darksalmon;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+  .cards h3{
+    font-family: MyFont;
+  }
+  .cards p{
+    font-family: MyFont1;
+    padding: 10px 20px;
+  }
+  .nav-item{
+    border-radius: 20px;
+    transition: 0.1s;
+  }
+  .nav-item:hover{
+    border-bottom: 2px solid aqua;
+  }
+  .vid a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color: orchid;
+    padding: 20px 60px;
+    font-family: MyFont1;
+    font-size: x-large;
+    /* animation: animate 6s linear infinite; */
+    transition: letter-spacing 0.2s;
+  }
+  .vid{
+    padding: 20px;
+    background-color: darksalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: background 10s */
+  }
+  .vid a:hover{
+    background:linear-gradient(45deg,pink,lightblue);
+    color: black;
+    letter-spacing: 10px;
+    border: 2px solid black;
+  }
+  @media (max-width: 1070px) {
+    .cards{
+      background-color: darksalmon;
+      /* display: block; */
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Creates two columns with equal width */
+      padding-top: 50px;
+      /* padding-left: 30px; */
+    }
+    .containeri{
+      margin-top: 20px;
+    }
+    .containeri:nth-child(odd){
+      padding-left: 40px;
+    }
+  }
+  @media (max-width: 770px) {
+    .cards{
+      background-color: darksalmon;
+      display: block;
+      padding-top: 50px;
+      /* padding-left: 30px; */
+    }
+    .containeri{
+      padding-left: 40px;
+    }
+    .containeri:nth-child(odd){
+      padding-left: 40px;
+    }
+  }
+  @media (max-width: 523px){
+    header h6{
+      color: white;
+      font-size: 0.6rem;
+  }
+  }
+  @media (max-width: 409px){
+    header h6{
+      color: white;
+      font-size: 0.6rem;
+  }
+  .cardi{
+    height:300px;
+    width: 300px;
+  }
+  .fronti{
+    height:250px;
+    width: 250px;
+  }
+  .containeri{
+    padding-left: 20px;
+  }
+  .containeri:nth-child(odd){
+    padding-left: 20px;
+  }
+  }

@@ -1,0 +1,41 @@
+@font-face{
+    font-family: MyFont;
+    src: url(../font/always_smile/Always\ Smile.otf);
+  }
+  @font-face{
+    font-family: MyFont1;
+    src: url(../font/sinoreta/Sinoreta_PERSONAL_USE_ONLY.otf);
+  }
+  body{
+      background-color: black;
+  }
+  #logo{
+      width: 50px;
+      height: 50px;
+      margin-left: 0;
+      margin-right: 5px;
+  }
+  /* .cards{
+      padding-top: 50px;
+      background-color: peachpuff;
+      display: flex;
+      justify-content: space-around;
+  } */
+  header{
+      background-color: #000000dc;
+      height: 5vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  header h6{
+      color: white;
+  }
+  .nav-item{
+    border-radius: 20px;
+    transition: 0.1s;
+  }
+  .nav-item:hover{
+    border-bottom: 2px solid aqua;
+  }
